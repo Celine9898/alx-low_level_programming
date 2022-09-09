@@ -3,8 +3,8 @@
 /**
  * main - main block
  * Description: Write a program that prints all possible
- *  combinations of two two-digit numbers.
- *  Return: always 0
+ * combinations of two two-digit numbers.
+ * Return: always 0
  */
 int main(void)
 {
