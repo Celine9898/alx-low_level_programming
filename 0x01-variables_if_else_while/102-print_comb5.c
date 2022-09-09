@@ -8,42 +8,30 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e;
-int f = 0;
+int i;
+int j;
+int k;
 
-while (f < 10)
+for (i = 0; i <= 9; i++)
 {
-e = 0;
-while (e < 10)
+for (j = 0; j <= 9; j++)
 {
-d = 0;
-while (d < 10)
+for (k = 0; k <= 9; k++)
 {
-c = 0;
-while (c < 10)
+if (k > j && j > i)
 {
-if (!(f == c && e == d))
+putchar(i + '0');
+putchar(j + '0');
+putchar(k + '0');
+if (i != 7 || j != 8 || k != 9)
 {
-putchar('0' + f);
-putchar('0' + e);
-putchar(' ');
-putchar('0' + d);
-putchar('0' + c);
-if (!(f + e == 18 && c + d == 17 && d == 9))
-{
+
 putchar(',');
-putchar(' ');
+putchar(',');
 }
 }
-c++;
 }
-d++;
 }
-e++;
-}
-f++;
 }
 putchar('\n');
 return (0);
