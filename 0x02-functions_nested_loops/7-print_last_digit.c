@@ -1,7 +1,7 @@
 #include "main.h"
 #include "6-abs.c"
 /**
- * print_the_last_digit - main function
+ * print_last_digit - return last digit
  *
  * @n: integer to get last digit of
  * Return: 0 or 1
