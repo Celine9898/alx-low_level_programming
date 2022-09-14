@@ -7,20 +7,27 @@
  */
 int main(void)
 {
-	int i = 0;
-	unsigned long int a = 0, b = 1, next = 0;
+	int counter = 2;
 
-	while (i < 98)
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
+
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
+	while (counter < 98)
 	{
-		next = a + b;
+		counter++;
+		printf("%.0f", c);
 		a = b;
-		b = next;
-		printf("%lu", next);
-
-		if (i < 97)
+		b = c;
+		c = a + b;
+		if (counter < 98)
+		{
 			printf(", ");
-		i++;
+		}
 	}
-	putchar('\n');
-	return (0);
+
+		printf("\n");
+		return (0);
 }
