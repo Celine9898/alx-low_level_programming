@@ -24,5 +24,8 @@ int _abs(int);
  * @int: integer to input
  *
  * Return: last digit of integer
+ *
  */
+int print_last_digit(int);
+
 #endif
