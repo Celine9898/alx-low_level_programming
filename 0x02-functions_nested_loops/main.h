@@ -17,6 +17,12 @@ int _isalpha(int c);
  * @n: integer to input
  * Return: 1 or 0  or -1
  */
+int print_sign(int n);
+/**
+ * _abs - gives absolute value
+ * @int: integer
+ * Return: integer or abs value of int
+ */
 int _abs(int);
 /**
  * print_last_last - prints digit last
