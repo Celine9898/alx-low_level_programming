@@ -10,4 +10,5 @@ int _putchar(char c);
  * print_alphabet - function to print alphabet
  */
 int _isupper(int c);
+int _isdigit(int c);
 #endif
