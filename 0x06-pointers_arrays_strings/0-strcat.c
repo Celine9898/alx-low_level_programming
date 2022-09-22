@@ -7,22 +7,41 @@
  * Return: a pointer to the resulting string
  */
 char *_strcat(char *dest, char *src)
+
 {
-	int i;
-	int k;
 
-	i = 0;
-	k = 0;
+int i, j;
 
-	while (dest[i] != '\n')
-		i++;
 
-	while (src[k] != '\n')
-	{
-		dest[i] = src[k];
-		k++;
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+
+i = 0;
+
+while (dest[i] != '\0')
+
+{
+
+i++;
+
+}
+
+
+
+j = 0;
+
+while (src[j] != '\0')
+
+{
+
+dest[i] = src[j];
+
+j++;
+
+i++;
+
+}
+
+dest[i] = '\0';
+
+return (dest);
+
 }
