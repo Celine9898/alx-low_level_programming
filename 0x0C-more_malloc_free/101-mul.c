@@ -3,8 +3,8 @@
 #include "main.h"
 
 /**
- * is_digit - checks if a string contains a non-digit cha
- * @s: string to be evaluate
+ * is_digit - checks if a string contains a non-digit char
+ * @s: string to be evaluated
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
@@ -15,7 +15,7 @@ int is_digit(char *s)
 
 	while (s[i])
 	{
-		if (s[i] < '0' || s[i] > '9'
+		if (s[i] < '0' || s[i] > '9')
 			return (0);
 		i++;
 	}
@@ -35,8 +35,7 @@ int _strlen(char *s)
 
 	while (s[i] != '\0')
 	{
-	i++;
-
+		i++;
 	}
 	return (i);
 }
@@ -44,7 +43,6 @@ int _strlen(char *s)
 /**
  * errors - handles errors for main
  */
-
 void errors(void)
 {
 	printf("Error\n");
@@ -58,7 +56,6 @@ void errors(void)
  *
  * Return: always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
@@ -71,7 +68,7 @@ int main(int argc, char *argv[])
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
 	result = malloc(sizeof(int) * len);
-	if (!result
+	if (!result)
 		return (1);
 	for (i = 0; i <= len1 + len2; i++)
 		result[i] = 0;
